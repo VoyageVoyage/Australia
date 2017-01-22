@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 
-<html>
+<html ng-app="Australie">
   <head>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <meta http-equiv="Content-Language" content="fr" />
    <meta name="author" content="Clémentine de Carlan" />
    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
    <link rel="stylesheet" href="style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
    <title>Australie</title>
   </head>
   <body>
     <div id="mapid"></div>
-    
+    <div id="diapo" ng-controller="PhotosController as diapo" ng-show="diapo.isOpen">
+      <span ng-click="diapo.close()">Fermer</span>
+      <p>Photo numéro : {{diapo.selectedPic}}</p>
+      <p>SRC : {{diapo.photos[diapo.selectedPic].src}}</p>
+      <span ng-click="diapo.prevPic()">Photo précédente</span>&nbsp;<span ng-click="diapo.nextPic()">Photo suivante</span>
+    </div>
     <script src="http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
     <script type="text/javascript" src="script.js"></script>

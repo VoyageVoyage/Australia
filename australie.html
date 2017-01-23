@@ -15,6 +15,7 @@
     <div id="diapo" ng-controller="PhotosController as diapo" ng-show="diapo.isOpen">
       <span ng-click="diapo.close()">Fermer</span>
       <p>Photo numéro : {{diapo.selectedPic}}</p>
+      <p>Repère numéro : {{diapo.photos[diapo.selectedPic].r}}</p>
       <p>SRC : {{diapo.photos[diapo.selectedPic].src}}</p>
       <span ng-click="diapo.prevPic()">Photo précédente</span>&nbsp;<span ng-click="diapo.nextPic()">Photo suivante</span>
     </div>

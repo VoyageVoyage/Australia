@@ -9,9 +9,20 @@ var repere1 = L.marker([-38.746,148.228]).addTo(map)
 
 //Liste des repères
 var reperes = [
-  {x:-38.746, y:148.228},
-  {x:-38.946, y:148.228},
-  {x:-39.146, y:148.428}
+  {x:-33.870, y:151.190}, // Sydney
+  {x:-42.883, y:147.332}, // Hobart
+  {x:-43.147, y:147.850}, // Port Arthur
+  {x:-43.352, y:147.370}, // Bruny Island
+  {x:-42.900, y:147.225}, // Wellington
+  {x:-43.444, y:146.904}, // Ida Bay
+  {x:-43.611, y:146.824}, // South
+  {x:-43.462, y:146.849}, // Mystery Creek Cave
+  {x:-42.301, y:146.450}, // Tarraleah
+  {x:-42.104, y:146.142}, // Lake St Clair and Shadow Lake
+  {x:-41.777, y:145.535}, // Rosebery and Montezuma Falls
+  {x:-41.677, y:145.941}, // Cradle Mountain
+  {x:-41.464, y:146.223}, // Gowrie Park
+  {x:-42.898, y:147.333} // Hobart
 ]
 
 //Code AngularJS

@@ -14,9 +14,28 @@ body{
   top:50px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
   left:25%;
   width: 50%;
-  height: 50%;
+  height: 60%;
   background-color: #FFFFFF;
   z-index:999;
+}
+.fermer {
+  float: right;
+  background-image: url("Fermer.jpg");
+  cursor:pointer;
+  width: 40px;
+  height: 40px;
+}
+.boutons {
+  width: 500px;
+  margin:auto;
+}
+.nav {
+  cursor: pointer;
+  padding:5px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  margin: 10px;
 }

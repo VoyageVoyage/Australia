@@ -3,35 +3,18 @@ var map = L.map('mapid').setView([-38.746,148.228], 6);
 //Téléchargement du fond de carte chez OSM
 var osm = new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png?{foo}', {foo: 'bar'}).addTo(map);
 //Affichage du tracé GPX grâce à leaflet-omnivore
-omnivore.gpx('HobartPortArthur.gpx').addTo(map);
-omnivore.gpx('HobartBruny.gpx').addTo(map);
-omnivore.gpx('HobartWellington.gpx').addTo(map);
-omnivore.gpx('HobartHobartIdaBay.gpx').addTo(map);
-omnivore.gpx('IdayBaySouth.gpx').addTo(map);
-omnivore.gpx('SouthTarraleah.gpx').addTo(map);
-omnivore.gpx('TarraleahLake.gpx').addTo(map);
-omnivore.gpx('LakeRosebery.gpx').addTo(map);
-omnivore.gpx('RoseberyCradle.gpx').addTo(map);
-omnivore.gpx('CradleGowrie.gpx').addTo(map);
-omnivore.gpx('GowrieHobart.gpx').addTo(map);
+omnivore.gpx('Trajets/HobartPortArthur.gpx').addTo(map);
+omnivore.gpx('Trajets/HobartBruny.gpx').addTo(map);
+omnivore.gpx('Trajets/HobartWellington.gpx').addTo(map);
+omnivore.gpx('Trajets/HobartHobartIdaBay.gpx').addTo(map);
+omnivore.gpx('Trajets/IdayBaySouth.gpx').addTo(map);
+omnivore.gpx('Trajets/SouthTarraleah.gpx').addTo(map);
+omnivore.gpx('Trajets/TarraleahLake.gpx').addTo(map);
+omnivore.gpx('Trajets/LakeRosebery.gpx').addTo(map);
+omnivore.gpx('Trajets/RoseberyCradle.gpx').addTo(map);
+omnivore.gpx('Trajets/CradleGowrie.gpx').addTo(map);
+omnivore.gpx('Trajets/GowrieHobart.gpx').addTo(map);
 
-//Liste des repères
-var reperes = [
-  {x:-33.870, y:151.190, t:"Sydney"},
-  {x:-42.883, y:147.332, t:"Hobart"},
-  {x:-43.147, y:147.850, t:"Journée à Port-Arthur"},
-  {x:-43.352, y:147.370, t:"Bruny Island, rando à Fluted Cape"},
-  {x:-42.900, y:147.225, t:"Ascension de Mount Wellington"},
-  {x:-43.444, y:146.904, t:"Départ pour le Sud, Ida Bay et Mystery Creek Cave"},
-  {x:-43.611, y:146.824, t:"Cockle Creek et South Coast Track"},
-  //{x:-43.462, y:146.849}, // 6 Mystery Creek Cave
-  {x:-42.301, y:146.450, t:"Tarraleah"},
-  {x:-42.104, y:146.142, t:"Lake St Clair, rando jusqu'à Shadow Lake"},
-  {x:-41.777, y:145.535, t:"Nuit à Rosebery, balade aux chutes de Montezuma"},
-  {x:-41.677, y:145.941, t:"Cradle Mountain: petite balade puis montée au sommet"},
-  {x:-41.464, y:146.223, t:"Nuit à Gowrie Park"},
-  {x:-42.898, y:147.333, t:"Retour à Hobart, nuit sur le lézard"}
-];
 
 //Code AngularJS
 angular.module('Australie', [])
@@ -41,10 +24,27 @@ angular.module('Australie', [])
     diapo.isOpen = false;
     //Initialisation à 0 de l'indice de la photo lue
     diapo.selectedPic=0;
+    //Liste des repères
+    diapo.reperes = [
+      {x:-33.870, y:151.190, t:"Sydney"},
+      {x:-42.883, y:147.332, t:"Hobart"},
+      {x:-43.147, y:147.850, t:"Journée à Port-Arthur"},
+      {x:-43.352, y:147.370, t:"Bruny Island, rando à Fluted Cape"},
+      {x:-42.900, y:147.225, t:"Ascension de Mount Wellington"},
+      {x:-43.444, y:146.904, t:"Départ pour le Sud, Ida Bay et Mystery Creek Cave"},
+      {x:-43.611, y:146.824, t:"Cockle Creek et South Coast Track"},
+      //{x:-43.462, y:146.849}, // 6 Mystery Creek Cave
+      {x:-42.301, y:146.450, t:"Tarraleah"},
+      {x:-42.104, y:146.142, t:"Lake St Clair, rando jusqu'à Shadow Lake"},
+      {x:-41.777, y:145.535, t:"Nuit à Rosebery, balade aux chutes de Montezuma"},
+      {x:-41.677, y:145.941, t:"Cradle Mountain: petite balade puis montée au sommet"},
+      {x:-41.464, y:146.223, t:"Nuit à Gowrie Park"},
+      {x:-42.898, y:147.333, t:"Retour à Hobart, nuit sur le lézard"}
+    ];
     //Initialisation de la liste des photos, par ordre d'apparition
     // /!\ La liste doit être triée par numéro de repère croissant
     diapo.photos = [
-      {src:"IMG_0276.jpg", legende:"Bla", r:0},
+      {src:"IMG_0276.jpg", legende:"Bla", r:1},
       {src:"IMG_0278.jpg", legende:"Blackwattle Bay Marine", r:1},
       {src:"IMG_0279.jpg", legende:"Anzac Bridge depuis la marina", r:1},
       {src:"IMG_0281.jpg", legende:"Un bulot qui travaile dur", r:1},
@@ -416,7 +416,7 @@ angular.module('Australie', [])
       //On fait défiler les photos et on s'arrête dès qu'on trouve la première qui correspond au repère n°i
       var k=0;
       while(k<diapo.photosLength){
-        if(diapo.photos[k].r==i){
+        if(diapo.photos[k].r==(i+1)){
           //Dès qu'on trouve la première photo, on la choisi pour devenir la photo courante
           diapo.selectedPic=k;
           break;
@@ -429,9 +429,9 @@ angular.module('Australie', [])
       diapo.isOpen = false;
     }
     //Initialisation des repères
-    reperes.forEach(function(r,i) {
+    diapo.reperes.forEach(function(r,i) {
       //On ajoute le repère à la carte
-      r.repere=L.marker([r.x,r.y]).addTo(map);
+      r.repere=L.marker([r.x,r.y],{icon: new L.NumberedDivIcon({number: i+1})}).addTo(map);
       //On y associe les évènements nécessaires pour l'ouverture de la diapo
       r.repere.on('click', function(e) {
         diapo.open(i);

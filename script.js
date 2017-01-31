@@ -4,12 +4,10 @@ var map = L.map('mapid').setView([-38.746,148.228], 6);
 var osm = new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png?{foo}', {foo: 'bar'}).addTo(map);
 //Affichage du tracé GPX d'exemple grâce à leaflet-omnivore
 omnivore.gpx('chemin.gpx').addTo(map);
-//Ajout d'un repère et d'une popup qui s'ouvre toute seule
-var repere1 = L.marker([-38.746,148.228]).addTo(map);
 
 //Liste des repères
 var reperes = [
-  {x:-33.870, y:151.190}, // 1 Sydney
+  {x:-33.870, y:151.190,t:"Sydney"}, // 1 Sydney
   {x:-42.883, y:147.332}, // 2 Hobart
   {x:-43.147, y:147.850}, // 3 Port Arthur
   {x:-43.352, y:147.370}, // 4 Bruny Island

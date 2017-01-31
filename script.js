@@ -5,7 +5,7 @@ var osm = new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png?{foo}', {foo:
 //Affichage du tracé GPX d'exemple grâce à leaflet-omnivore
 omnivore.gpx('chemin.gpx').addTo(map);
 //Ajout d'un repère et d'une popup qui s'ouvre toute seule
-var repere1 = L.marker([-38.746,148.228]).addTo(map)
+var repere1 = L.marker([-38.746,148.228]).addTo(map);
 
 //Liste des repères
 var reperes = [
@@ -23,7 +23,7 @@ var reperes = [
   {x:-41.677, y:145.941}, // 11 Cradle Mountain
   {x:-41.464, y:146.223}, // 12 Gowrie Park
   {x:-42.898, y:147.333} // 13 Hobart
-]
+];
 
 //Code AngularJS
 angular.module('Australie', [])
@@ -380,7 +380,7 @@ angular.module('Australie', [])
       {src:"IMG_1400.jpg", legende:"Encore un peu d'escalade", r:11},
       {src:"IMG_1405.jpg", legende:"Fin de journée, le Docteur est fatigué", r:11},
       {src:"IMG_1407.jpg", legende:"Cradle Mountain : on y était !", r:11},
-      {src:"IMG_1408.jpg", legende:"Dove Lake", r:11,
+      {src:"IMG_1408.jpg", legende:"Dove Lake", r:11},
       {src:"IMG_1414.jpg", legende:"Petite baignade...", r:11},
       {src:"IMG_1417.jpg", legende:"Certains font sécher leur slip sur leur sac", r:11},
       {src:"IMG_1419.jpg", legende:"Au revoir Cradle Mountain", r:11},

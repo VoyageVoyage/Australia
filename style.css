@@ -21,6 +21,15 @@ body{
   background-color: #FFFFFF;
   z-index:999;
 }
+.diapotitle {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+.legend {
+  text-align: center;
+  font-style: italic;
+}
 .fermer {
   float: right;
   background-image: url("Fermer.jpg");

@@ -37,8 +37,9 @@ angular.module('Australie', [])
       {x:-42.301, y:146.450, t:"Tarraleah"},
       {x:-42.104, y:146.142, t:"Lake St Clair, rando jusqu'à Shadow Lake"},
       {x:-41.777, y:145.535, t:"Nuit à Rosebery, balade aux chutes de Montezuma"},
-      {x:-41.677, y:145.941, t:"Cradle Mountain: petite balade puis montée au sommet"},
+      {x:-41.650, y:145.962, t:"Cradle Mountain: petite balade"},
       {x:-41.464, y:146.223, t:"Nuit à Gowrie Park"},
+      {x:-41.677, y:145.941, t:"Cradle Mountain: montée au sommet"},
       {x:-42.898, y:147.333, t:"Retour à Hobart, nuit sur le lézard"}
     ];
     //Initialisation de la liste des photos, par ordre d'apparition
@@ -353,49 +354,49 @@ angular.module('Australie', [])
       {src:"IMG_1302.jpg", legende:"Devinez qui dort par terre...", r:12},
       {src:"IMG_1304.jpg", legende:"Jolie vue sur les montagnes environnantes au coucher du soleil", r:12},
       {src:"IMG_1306.jpg", legende:"Ciel coloré", r:12},
-      {src:"IMG_1311.jpg", legende:"Cradle Mountain : cette fois-ci, c'est parti pour l'ascension", r:11},
-      {src:"IMG_1315.jpg", legende:"1ère étape : Marions Lookout", r:11},
-      {src:"IMG_1317.jpg", legende:"On prend des cours", r:11},
-      {src:"IMG_1318.jpg", legende:"Cradle Mountain", r:11},
-      {src:"IMG_1320.jpg", legende:"On peut même boire l'eau des ruisseaux !", r:11},
-      {src:"IMG_1323.jpg", legende:"Cradle Mountain", r:11},
-      {src:"IMG_1325.jpg", legende:"En route !", r:11},
-      {src:"IMG_1329.jpg", legende:"Vue sur le lac Dove depuis la montée", r:11},
-      {src:"IMG_1330.jpg", legende:"La montée. Bon courage !", r:11},
-      {src:"IMG_1331.jpg", legende:"On se retrouve en haut !", r:11},
-      {src:"IMG_1332.jpg", legende:"A tout à l'heure Docteur", r:11},
-      {src:"IMG_1334.jpg", legende:"Vue sur l'Overland Track de la montée", r:11},
-      {src:"IMG_1335.jpg", legende:"Overland Track : direction Lac St Clair, 6 jours de marche (une autre fois peut-être...)", r:11},
-      {src:"IMG_1340.jpg", legende:"C'est plus de l'escalade que de la rando", r:11},
-      {src:"IMG_1341.jpg", legende:"Vous ne voyez pas ses pieds, mais oui, il est toujours en tongs !", r:11},
-      {src:"IMG_1342.jpg", legende:"Tout se passe bien", r:11},
-      {src:"IMG_1348.jpg", legende:"Trou de la mouche ! Souvenirs du ski", r:11},
-      {src:"IMG_1349.jpg", legende:"Quelle sportive", r:11},
-      {src:"IMG_1355.jpg", legende:"En haut ? Point du tout", r:11},
-      {src:"IMG_1358.jpg", legende:"Jolie vue", r:11},
-      {src:"IMG_1360.jpg", legende:"Mount Pellion au loin", r:11},
-      {src:"IMG_1362.jpg", legende:"Cette fois-ci on est en haut !", r:11},
-      {src:"IMG_1372.jpg", legende:"Petite photo malgré le fait qu'on ait perdu le gros de la troupe", r:11},
-      {src:"IMG_1374.jpg", legende:"La prochaine fois on fera celui-là si tu veux maman", r:11},
-      {src:"IMG_1375.jpg", legende:"Il n'y a plus qu'à redescendre, mais par où ?", r:11},
-      {src:"IMG_1376.jpg", legende:"Jolie vue", r:11},
-      {src:"IMG_1378.jpg", legende:"Dove Lake", r:11},
-      {src:"IMG_1380.jpg", legende:"Lake Wilks et Dove Lake", r:11},
+      {src:"IMG_1311.jpg", legende:"Cradle Mountain : cette fois-ci, c'est parti pour l'ascension", r:13},
+      {src:"IMG_1315.jpg", legende:"1ère étape : Marions Lookout", r:13},
+      {src:"IMG_1317.jpg", legende:"On prend des cours", r:13},
+      {src:"IMG_1318.jpg", legende:"Cradle Mountain", r:13},
+      {src:"IMG_1320.jpg", legende:"On peut même boire l'eau des ruisseaux !", r:13},
+      {src:"IMG_1323.jpg", legende:"Cradle Mountain", r:13},
+      {src:"IMG_1325.jpg", legende:"En route !", r:13},
+      {src:"IMG_1329.jpg", legende:"Vue sur le lac Dove depuis la montée", r:13},
+      {src:"IMG_1330.jpg", legende:"La montée. Bon courage !", r:13},
+      {src:"IMG_1331.jpg", legende:"On se retrouve en haut !", r:13},
+      {src:"IMG_1332.jpg", legende:"A tout à l'heure Docteur", r:13},
+      {src:"IMG_1334.jpg", legende:"Vue sur l'Overland Track de la montée", r:13},
+      {src:"IMG_1335.jpg", legende:"Overland Track : direction Lac St Clair, 6 jours de marche (une autre fois peut-être...)", r:13},
+      {src:"IMG_1340.jpg", legende:"C'est plus de l'escalade que de la rando", r:13},
+      {src:"IMG_1341.jpg", legende:"Vous ne voyez pas ses pieds, mais oui, il est toujours en tongs !", r:13},
+      {src:"IMG_1342.jpg", legende:"Tout se passe bien", r:13},
+      {src:"IMG_1348.jpg", legende:"Trou de la mouche ! Souvenirs du ski", r:13},
+      {src:"IMG_1349.jpg", legende:"Quelle sportive", r:13},
+      {src:"IMG_1355.jpg", legende:"En haut ? Point du tout", r:13},
+      {src:"IMG_1358.jpg", legende:"Jolie vue", r:13},
+      {src:"IMG_1360.jpg", legende:"Mount Pellion au loin", r:13},
+      {src:"IMG_1362.jpg", legende:"Cette fois-ci on est en haut !", r:13},
+      {src:"IMG_1372.jpg", legende:"Petite photo malgré le fait qu'on ait perdu le gros de la troupe", r:13},
+      {src:"IMG_1374.jpg", legende:"La prochaine fois on fera celui-là si tu veux maman", r:13},
+      {src:"IMG_1375.jpg", legende:"Il n'y a plus qu'à redescendre, mais par où ?", r:13},
+      {src:"IMG_1376.jpg", legende:"Jolie vue", r:13},
+      {src:"IMG_1378.jpg", legende:"Dove Lake", r:13},
+      {src:"IMG_1380.jpg", legende:"Lake Wilks et Dove Lake", r:13},
       {src:"IMG_1382.jpg", legende:"Je vous l'avais dit, toujours en tong ! (j'ai bien mon appareil photo à la main...)", r:11},
-      {src:"IMG_1384.jpg", legende:"On est censé redescendre...", r:11},
-      {src:"IMG_1392.jpg", legende:"Attention à ne pas tomber à cause de la fatigue", r:11},
-      {src:"IMG_1398.jpg", legende:"Toujours une jolie vue", r:11},
-      {src:"IMG_1400.jpg", legende:"Encore un peu d'escalade", r:11},
-      {src:"IMG_1405.jpg", legende:"Fin de journée, le Docteur est fatigué", r:11},
-      {src:"IMG_1407.jpg", legende:"Cradle Mountain : on y était !", r:11},
-      {src:"IMG_1408.jpg", legende:"Dove Lake", r:11},
-      {src:"IMG_1414.jpg", legende:"Petite baignade...", r:11},
-      {src:"IMG_1417.jpg", legende:"Certains font sécher leur slip sur leur sac", r:11},
-      {src:"IMG_1419.jpg", legende:"Au revoir Cradle Mountain", r:11},
-      {src:"IMG_1420.jpg", legende:"Organisation dans le bateau, je crois que personne n'a bien dormi", r:12},
-      {src:"IMG_1421.jpg", legende:"Sauf peut-être Nono, elle a eu droit à un Wombat !", r:12},
-      {src:"IMG_1423.jpg", legende:"Dernier jour, toujours plus à l'arrache", r:12},
-      {src:"IMG_1424.jpg", legende:"Petites maisons colorées sur la colline", r:12}
+      {src:"IMG_1384.jpg", legende:"On est censé redescendre...", r:13},
+      {src:"IMG_1392.jpg", legende:"Attention à ne pas tomber à cause de la fatigue", r:13},
+      {src:"IMG_1398.jpg", legende:"Toujours une jolie vue", r:13},
+      {src:"IMG_1400.jpg", legende:"Encore un peu d'escalade", r:13},
+      {src:"IMG_1405.jpg", legende:"Fin de journée, le Docteur est fatigué", r:13},
+      {src:"IMG_1407.jpg", legende:"Cradle Mountain : on y était !", r:13},
+      {src:"IMG_1408.jpg", legende:"Dove Lake", r:13},
+      {src:"IMG_1414.jpg", legende:"Petite baignade...", r:13},
+      {src:"IMG_1417.jpg", legende:"Certains font sécher leur slip sur leur sac", r:13},
+      {src:"IMG_1419.jpg", legende:"Au revoir Cradle Mountain", r:13},
+      {src:"IMG_1420.jpg", legende:"Organisation dans le bateau, je crois que personne n'a bien dormi", r:14},
+      {src:"IMG_1421.jpg", legende:"Sauf peut-être Nono, elle a eu droit à un Wombat !", r:14},
+      {src:"IMG_1423.jpg", legende:"Dernier jour, toujours plus à l'arrache", r:14},
+      {src:"IMG_1424.jpg", legende:"Petites maisons colorées sur la colline", r:14}
     ];
     //Permet de passer à la photo suivante
     diapo.nextPic=function(){
@@ -403,11 +404,25 @@ angular.module('Australie', [])
         diapo.selectedPic++;
       }
     }
+    //Permet de savoir si la photo a un successeur
+    diapo.hasNext=function(){
+      if(diapo.selectedPic<diapo.photos.length-1){
+        return diapo.photos[diapo.selectedPic].r==diapo.photos[diapo.selectedPic+1].r;
+      }
+      return false;
+    }
     //Permet de revenir à la photo précédente
     diapo.prevPic=function(){
       if(diapo.selectedPic>0){
         diapo.selectedPic--;
       }
+    }
+    //Permet de savoir si la photo a un prédécesseur
+    diapo.hasPrev=function(){
+      if(diapo.selectedPic>0){
+        return diapo.photos[diapo.selectedPic].r==diapo.photos[diapo.selectedPic-1].r;
+      }
+      return false;
     }
     //Permet d'ouvrir la diapo associée au repère n°i
     diapo.open=function(i){

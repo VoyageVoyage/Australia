@@ -5,6 +5,7 @@
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <meta http-equiv="Content-Language" content="fr" />
    <meta name="author" content="Clémentine de Carlan" />
+   <link href="https://fonts.googleapis.com/css?family=Pacifico|Open-sans" rel="stylesheet">
    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
    <link rel="stylesheet" href="style.css">
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
@@ -17,7 +18,7 @@
       <div class="diapotitle">{{diapo.reperes[diapo.photos[diapo.selectedPic].r-1].t}}</div>
       <img ng-src="Photos/{{diapo.photos[diapo.selectedPic].src}}" class="photo"></img>
       <p class="legend">{{diapo.photos[diapo.selectedPic].legende}}</p>
-      <div class="boutons"><span ng-click="diapo.prevPic()" class="nav">Photo précédente</span>&nbsp;<span ng-click="diapo.nextPic()" class="nav">Photo suivante</span></div>
+      <div class="boutons"><span ng-show="diapo.hasPrev()" ng-click="diapo.prevPic()" class="nav">Photo précédente</span><span ng-show="diapo.hasNext()" ng-click="diapo.nextPic()" class="nav">Photo suivante</span></div>
     </div>
     <script src="http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>

@@ -52,7 +52,8 @@ var boatIcon = L.icon({
         //Initialisation de la liste des photos, par ordre d'apparition
         // /!\ La liste doit être triée par numéro de repère croissant
         diapo.photos = [
-          {src:"IMG_0001.jpg",legende:"Novembre 2016"},
+          {src:"IMG_9003.jpg",legende:"Je signe où ?"},
+          {src:"IMG_9050.jpg",legende:"Novembre 2016"},
           {src:"IMG_9062.jpg",legende:"Novembre 2016"},
           {src:"IMG_9070.jpg",legende:"Novembre 2016"},
           {src:"IMG_9110.jpg",legende:"Novembre 2016"},

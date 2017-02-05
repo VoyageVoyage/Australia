@@ -45,7 +45,7 @@ angular.module('Australie', [])
     //Initialisation de la liste des photos, par ordre d'apparition
     // /!\ La liste doit être triée par numéro de repère croissant
     diapo.photos = [
-      {src:"IMG_0276.jpg", legende:"Bla", r:1},
+      {src:"IMG_0276.jpg", legende:"Tribal Warrior", r:1},
       {src:"IMG_0278.jpg", legende:"Blackwattle Bay Marine", r:1},
       {src:"IMG_0279.jpg", legende:"Anzac Bridge depuis la marina", r:1},
       {src:"IMG_0281.jpg", legende:"Un bulot qui travaile dur", r:1},

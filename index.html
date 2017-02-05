@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html ng-app="Australie">
   <head>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <meta http-equiv="Content-Language" content="fr" />
@@ -8,12 +8,21 @@
    <link href="https://fonts.googleapis.com/css?family=Pacifico|Open-sans" rel="stylesheet">
    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
    <link rel="stylesheet" href="style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
    <title>Voyage Voyage</title>
   </head>
   <body>
-    <div id="mapid0"></div>
-
+    <div id="mapid"></div>
+    <div id="diapo" ng-controller="PhotosController as diapo" ng-show="diapo.isOpen">
+      <span ng-click="diapo.close()" class="fermer"></span>
+      <div class="diapotitle">Arauquana</div>
+      <img ng-src="Arau/{{diapo.photos[diapo.selectedPic].src}}" class="photo"></img>
+      <p class="legend">{{diapo.photos[diapo.selectedPic].legende}}</p>
+      <div class="boutons"><span ng-show="diapo.hasPrev()" ng-click="diapo.prevPic()" class="nav">Photo précédente</span><span ng-show="diapo.hasNext()" ng-click="diapo.nextPic()" class="nav">Photo suivante</span></div>
+    </div>
+    <script src="http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script type="text/javascript" src="numbered_markers.js"></script>
     <script type="text/javascript" src="script.js"></script>
 
   </body>

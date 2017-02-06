@@ -12,12 +12,6 @@
     <!--url>https://www.google.co.uk/maps/dir/-41.464, 146.223/-42.898, 147.333/@-42.1422932,146.8641031,8z/data=!3m1!4b1!4m9!4m8!1m3!2m2!1d146.223!2d-41.464!1m3!2m2!1d147.333!2d-42.898?hl=en</url-->
     <time>2017-01-31T14:34:35Z</time>
   </metadata>
-  <wpt lat="-41.464" lon="146.223">
-    <name>-41.464</name>
-  </wpt>
-  <wpt lat="-42.898" lon="147.333">
-    <name>-42.898</name>
-  </wpt>
 <trk>
   <name>-41.464 to -42.898</name>
   <number>1</number>
